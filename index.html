@@ -1,31 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Space Login</title>
-  <link rel="stylesheet" href="style.css">
+  <title>cadastro</title>
 </head>
 <body>
-    <header>
-         <h1></h1>
-        <img src="imagem/Logo Space.png" width="200px" heigth="80px">
-      <h1>Log in </h1>
-     <p>Welcome back! We're so happy to have you back</p>
-      <form action="/login" method="post">
-        <h2>Full name </h2>
-        <input type="text" name="username" placeholder="Full name"><br>
-        <h3>Password </h3>
-        <input type="password" name="password" placeholder="Password"><br>
-        <p> Forgat passseword</p>
-        
-        <input type="submit" value="Log in" style="background-color: blue; color: aliceblue;">
-      </form>
-      <p>Or you can log in with email</p>
-      <a href="/login/email"><img src="imagem/log in google.png" alt="Log in with Google"></a>
-      <p>Don't have an account?</p>
-      <a href="/signup">Sign up</a>
-    
+  <h1>cadastro</h1>
+
+  <form action="enviar.php" method="post">
+    <div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+    </div>
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="cpf">CPF:</label>
+      <input type="number" id="cpf" name="cpf" required>
+    </div>
+    <div>
+      <label for="rg">RG:</label>
+      <input type="number" id="rg" name="rg" required>
+    </div>
+    <div>
+      <label for="data_nascimento">Data de nascimento:</label>
+      <input id="data_nascimento" name="data_nascimento" required>
+    </div>
+    <div>
+      <label for="rua">Rua:</label>
+      <input type="text" id="rua" name="rua" required>
+    </div>
+    <div>
+      <label for="numero">Número:</label>
+      <input type="number" id="numero" name="numero" required>
+    </div>
+    <div>
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" required>
+    </div>
+    <div>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+    </div>
+    <div>
+      <label for="sexo">Sexo:</label>
+      <input id="sexo" name="sexo">
+    </div>
+    <div>
+      <label for="raca">Raça:</label>
+      <input type="text" id="raca" name="raca" required>
+    </div>
+    <div>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </div>
+  </form>
 </body>
 </html>
-
-
